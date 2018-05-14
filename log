@@ -1,0 +1,33 @@
+$ swipl BI-Lb.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 7.6.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit http://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+?- [l3].
+true.
+
+?- tt(_).
+
+1 [John,loves,Mary] s(f)
+
+[John] loves Mary
+
+2 [man,that,loves,Mary] cn(s(m))
+
+man [[that loves Mary]]
+man [[that loves Mary]]
+man [[that loves Mary]]
+man [[that loves Mary]]
+man [[that loves Mary]]
+man [[that loves Mary]]
+man [[that loves Mary]]
+
+3 [man,that,Mary,loves] cn(s(m))
+
+man [[that [Mary] loves]]
+% 4,711 inferences, 0.002 CPU in 0.002 seconds (89% CPU, 2785925 Lips)
+true.
+
+?- halt.
